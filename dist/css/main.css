@@ -1,0 +1,76 @@
+@import url("https:fonts.googleapis.com/css?family=Raleway|PT+Serif:700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 768px;
+  margin: 0 auto; }
+
+.jabquiz {
+  padding: 2rem 1.4rem; }
+  .jabquiz-question-box {
+    text-align: center; }
+    .jabquiz-question-box .question {
+      font-family: "PT Serif", sans-serif;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      padding: 0.8rem 4rem;
+      color: #1a1a1a; }
+    .jabquiz-question-box .tracker {
+      font-family: Raleway, Charcoal, sans-serif;
+      color: #282a39;
+      padding: 1rem; }
+    .jabquiz-question-box .progress {
+      border-radius: 4px;
+      margin: 2rem auto;
+      width: 50%;
+      background-color: #f5f5f5; }
+      .jabquiz-question-box .progress-inner {
+        height: 10px;
+        width: 0%;
+        background-color: #f3a82f;
+        border-right: 2px solid black; }
+    .jabquiz-question-box .tagline {
+      font-family: Raleway, Charcoal, sans-serif;
+      color: #ccc;
+      font-size: 1.4rem; }
+  .jabquiz-choices-box .choices {
+    list-style: none;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap; }
+    .jabquiz-choices-box .choices .choice {
+      min-width: 300px;
+      border-radius: 4px;
+      display: block;
+      background: #f5f5f5;
+      margin: 0.5rem auto;
+      font-family: sans-serif;
+      color: #282a39;
+      letter-spacing: 1.2px;
+      font-size: 0.86rem; }
+      .jabquiz-choices-box .choices .choice input {
+        opacity: 0; }
+        .jabquiz-choices-box .choices .choice input:checked + label {
+          color: #f3a82f; }
+      .jabquiz-choices-box .choices .choice .label {
+        padding: 2rem;
+        display: flex;
+        align-items: center; }
+
+.footer .button {
+  padding: 1rem 3.8rem;
+  text-transform: uppercase;
+  border: solid 1px #ccc;
+  outline: 0;
+  transition: 0.3s all ease;
+  opacity: 0.9;
+  font-weight: bold; }
+  .footer .button:hover {
+    opacity: 1;
+    background: #282a39;
+    color: white; }
+  .footer .button-bordered {
+    border: 1px solid #282a39; }
